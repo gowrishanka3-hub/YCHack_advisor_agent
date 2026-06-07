@@ -1,0 +1,7 @@
+livekit-agents[anthropic,cartesia,deepgram,silero]~=1.5
+livekit-plugins-turn-detector
+moss
+python-dotenv
+fastapi
+uvicorn[standard]
+livekit-api
