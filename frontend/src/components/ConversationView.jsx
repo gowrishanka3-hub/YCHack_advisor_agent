@@ -18,6 +18,7 @@ export default function ConversationView({ isConnected }) {
   const session = useSessionContext();
   const { messages, send } = useSessionMessages();
   const [planMessages, setPlanMessages] = useState([]);
+  const [chatLog, setChatLog] = useState([]);
   const scrollRef = useRef(null);
 
   const handleGraduationPlan = useCallback((msg) => {
@@ -35,9 +36,29 @@ export default function ConversationView({ isConnected }) {
 
   useDataChannel("graduation_plan", handleGraduationPlan);
 
+  const handleChatLog = useCallback((msg) => {
+    try {
+      const decoder = new TextDecoder();
+      const payload = JSON.parse(decoder.decode(msg.payload));
+      if (!payload?.text) return;
+      setChatLog((prev) => [
+        ...prev,
+        {
+          id: `chat-${Date.now()}-${prev.length}`,
+          role: payload.role || "assistant",
+          text: payload.text,
+        },
+      ]);
+    } catch (e) {
+      console.error("Failed to parse chat log:", e);
+    }
+  }, []);
+
+  useDataChannel("chat", handleChatLog);
+
   useEffect(() => {
     scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
-  }, [messages, planMessages]);
+  }, [messages, planMessages, chatLog]);
 
   const handleChipClick = async (question) => {
     if (session.connectionState === ConnectionState.Disconnected) {
@@ -50,7 +71,16 @@ export default function ConversationView({ isConnected }) {
     (m) => m.type === "userTranscript" || m.type === "agentTranscript"
   );
 
-  const showIdle = !isConnected && transcriptMessages.length === 0;
+  const transcriptDisplay = transcriptMessages.map((m) => ({
+    id: m.id,
+    role: m.type === "userTranscript" ? "user" : "assistant",
+    text: m.message,
+  }));
+  const seen = new Set(transcriptDisplay.map((m) => `${m.role}:${m.text}`));
+  const extraChat = chatLog.filter((m) => !seen.has(`${m.role}:${m.text}`));
+  const displayMessages = [...transcriptDisplay, ...extraChat];
+
+  const showIdle = !isConnected && displayMessages.length === 0;
 
   return (
     <div className="flex flex-1 flex-col overflow-hidden">
@@ -79,8 +109,8 @@ export default function ConversationView({ isConnected }) {
           </div>
         ) : (
           <div className="space-y-4">
-            {transcriptMessages.map((msg) => {
-              const isUser = msg.type === "userTranscript";
+            {displayMessages.map((msg) => {
+              const isUser = msg.role === "user";
               return (
                 <div
                   key={msg.id}
@@ -96,7 +126,7 @@ export default function ConversationView({ isConnected }) {
                     <div className="mb-0.5 text-xs font-medium uppercase tracking-wider opacity-60">
                       {isUser ? "You" : "Advisor"}
                     </div>
-                    {msg.message}
+                    {msg.text}
                   </div>
                 </div>
               );

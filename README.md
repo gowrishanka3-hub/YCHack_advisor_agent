@@ -7,9 +7,9 @@ A voice-first academic advising web app for hackathon demos. Students open the a
 - **Frontend:** React + Vite + TailwindCSS
 - **Voice pipeline:** LiveKit Agents (Python)
 - **Retrieval:** Moss Python SDK (sub-10ms semantic search)
-- **LLM:** Claude `claude-sonnet-4-20250514` via Anthropic API
-- **STT:** Deepgram
-- **TTS:** Cartesia
+- **LLM + TTS:** MiniMax (`MINIMAX_API_KEY`)
+- **STT / TTS:** LiveKit Inference (Deepgram + Cartesia via your LiveKit keys — no separate provider keys)
+- **Retrieval:** Moss (`MOSS_PROJECT_ID`, `MOSS_PROJECT_KEY`)
 
 ## Project Structure
 
@@ -34,17 +34,32 @@ A voice-first academic advising web app for hackathon demos. Students open the a
 ### 1. Fill in `.env.local`
 
 ```bash
+# Moss
 MOSS_PROJECT_ID=
 MOSS_PROJECT_KEY=
-MOSS_INDEX_NAME=academic_advisor
+
+# LiveKit (transport + Inference STT/TTS)
+LIVEKIT_URL=
 LIVEKIT_API_KEY=
 LIVEKIT_API_SECRET=
-LIVEKIT_URL=
-ANTHROPIC_API_KEY=
-DEEPGRAM_API_KEY=
-CARTESIA_API_KEY=
-CARTESIA_VOICE_ID=9626c31c-bec5-4cca-baa8-f8ba9e84c8bc
+
+# MiniMax — LLM + TTS
+MINIMAX_API_KEY=
+MINIMAX_API_BASE_URL=https://api.minimax.io
+MINIMAX_LLM_MODEL=MiniMax-M3
+MINIMAX_TTS_MODEL=speech-2.8-hd
+MINIMAX_VOICE=English_expressive_narrator
+MINIMAX_TTS_MODE=t2a
+MINIMAX_LLM_STREAM=false
+# global = api.minimax.io (overseas) | cn = api.minimaxi.com (China)
+MINIMAX_REGION=global
 ```
+
+STT runs through LiveKit Inference (Deepgram). LLM and TTS use MiniMax directly.
+
+**MiniMax errors?**
+- **401** — key region mismatch. Use `MINIMAX_REGION=global` for [platform.minimax.io](https://platform.minimax.io) keys, or `cn` for [platform.minimaxi.com](https://platform.minimaxi.com).
+- **500** — ensure `MINIMAX_LLM_MODEL=MiniMax-M3` and `MINIMAX_API_BASE_URL=https://api.minimax.io`.
 
 ### 2. Install Python dependencies
 
@@ -68,7 +83,15 @@ cp data/*.json frontend/public/data/
 python index_setup.py
 ```
 
-### 5. Start the token server (terminal 1)
+### 5. Download agent model files (run once)
+
+The turn detector and Silero VAD need local ONNX weights from Hugging Face:
+
+```bash
+python -m livekit.agents download-files
+```
+
+### 6. Start the token server (terminal 1)
 
 ```bash
 python token_server.py
@@ -108,7 +131,7 @@ Open [http://localhost:5173](http://localhost:5173) and start talking.
 ## How It Works
 
 ```
-Mic → LiveKit → Deepgram STT → Claude + Moss tools → Cartesia TTS → Speaker
+Mic → LiveKit → Inference STT → MiniMax LLM + Moss tools → Inference TTS → Speaker
                                       ↓
                               graduation_plan data → React table
 ```

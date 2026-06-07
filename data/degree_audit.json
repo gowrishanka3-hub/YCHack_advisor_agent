@@ -1,1 +1,91 @@
-[]
+[
+  {
+    "student_id": "UF-ahl001",
+    "name": "Alex Hales",
+    "major": "Computer Science (CLAS)",
+    "college": "College of Liberal Arts and Sciences",
+    "gpa": 3.52,
+    "year": "Rising Sophomore",
+    "expected_graduation": "Spring 2029",
+    "credits_earned": 39,
+    "credits_total": 120,
+    "critical_tracking_status": "On track",
+    "critical_tracking_gpa": 3.6,
+    "catalog_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/",
+    "completed_courses": [
+      "COP 3502C",
+      "COP 3503C",
+      "COT 3100",
+      "MAC 2311",
+      "MAC 2312",
+      "PHY 2048",
+      "PHY 2048L",
+      "ENC 1101",
+      "Quest 1",
+      "BSC 2010",
+      "PSY 2012",
+      "PHI 2010"
+    ],
+    "in_progress": [
+      "CDA 3101",
+      "COP 3530",
+      "MAC 2313",
+      "PHY 2049",
+      "PHY 2049L"
+    ],
+    "categories": {
+      "critical_tracking": {
+        "earned": 6,
+        "required": 8,
+        "courses_remaining": ["MAC 2313", "PHY 2049", "PHY 2049L", "COP 3530", "COP 4600"],
+        "notes": "Completed MAC 2311, MAC 2312, COP 3502C, COP 3503C, COT 3100, PHY 2048/2048L. COP 3530 and MAC 2313 in progress Fall 2026. COP 4600 due by critical-tracking semester 8."
+      },
+      "cs_core": {
+        "earned": 11,
+        "required": 35,
+        "courses_remaining": [
+          "CDA 3101",
+          "COP 3530",
+          "CEN 3031",
+          "CIS 4301",
+          "COP 4600",
+          "COP 4020",
+          "COP 4533",
+          "CIS 4914"
+        ],
+        "notes": "Core CS coursework per UF CLAS CSC BS requirements."
+      },
+      "foundational": {
+        "earned": 16,
+        "required": 32,
+        "courses_remaining": [
+          "MAC 2313",
+          "PHY 2049",
+          "PHY 2049L",
+          "MAS 3114",
+          "STA 3032",
+          "ENC 3246"
+        ],
+        "notes": "Calculus, physics, linear algebra, statistics, and technical writing."
+      },
+      "major_electives": {
+        "earned": 0,
+        "required": 9,
+        "courses_remaining": ["CIS 4XXX", "CIS 4XXX", "CIS 4XXX"],
+        "notes": "Any 4000-level or higher CISE course beyond core requirements."
+      },
+      "gen_ed": {
+        "earned": 12,
+        "required": 30,
+        "courses_remaining": ["Quest 2", "Foreign Language", "Gen Ed Humanities", "Gen Ed Biological Sciences"],
+        "notes": "Quest, CLAS distribution, foreign language proficiency still needed."
+      }
+    },
+    "next_semester_recommendation": {
+      "term": "Fall 2026",
+      "courses": ["CDA 3101", "COP 3530", "MAC 2313", "PHY 2049", "PHY 2049L"],
+      "source": "UF CSC BS model semester plan — Semester Three"
+    },
+    "advisor_notes": "Alex completed freshman year per model semester plan including summer gen eds. On track for critical tracking. After Fall 2026, plan Spring 2027 with CEN 3031, CIS 4301, Quest 2, and linear algebra."
+  }
+]
