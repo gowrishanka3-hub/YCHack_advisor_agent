@@ -47,6 +47,7 @@ def create_participant_token(identity: str, name: str, room_name: str) -> str:
     return token.to_jwt()
 
 
+@app.get("/api/token")
 @app.post("/api/token")
 async def get_token():
     if not LIVEKIT_URL or not LIVEKIT_API_KEY or not LIVEKIT_API_SECRET:
