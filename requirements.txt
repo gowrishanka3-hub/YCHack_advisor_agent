@@ -1,5 +1,6 @@
-livekit-agents[anthropic,cartesia,deepgram,silero]~=1.5
+livekit-agents[silero]~=1.5
 livekit-plugins-minimax-ai
+livekit-plugins-minimax
 livekit-plugins-turn-detector
 moss
 python-dotenv

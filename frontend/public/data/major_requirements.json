@@ -1,1 +1,146 @@
-[]
+[
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Critical Tracking",
+    "required_credits": 0,
+    "courses": [
+      "MAC 2311",
+      "MAC 2312",
+      "MAC 2313",
+      "PHY 2048",
+      "PHY 2048L",
+      "PHY 2049",
+      "PHY 2049L",
+      "COP 3502C",
+      "COP 3503C",
+      "COT 3100",
+      "COP 3530",
+      "COP 4600"
+    ],
+    "description": "UF CLAS Computer Science critical-tracking milestones. Semester 1: MAC 2311. Semester 2: MAC 2311. Semester 3: MAC 2312. Semester 4: MAC 2313 and PHY 2048/2048L or PHY 2053/2053L with 2.5 GPA on critical-tracking courses. Semester 5: COP 3502C and PHY 2049/2049L or PHY 2054/2054L. Semester 6: COP 3503C and COT 3100. Semester 7: COP 3530. Semester 8: COP 4600. Minimum 2.0 UF GPA required each term; 2.5 GPA on critical-tracking courses from semester 4 onward.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#criticaltrackingtext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Foundational Coursework",
+    "required_credits": 32,
+    "courses": [
+      "ENC 3246",
+      "MAC 2311",
+      "MAC 2312",
+      "MAC 2313",
+      "MAS 3114",
+      "PHY 2048",
+      "PHY 2048L",
+      "PHY 2049",
+      "PHY 2049L",
+      "STA 3032"
+    ],
+    "description": "Required foundational coursework totaling 29-32 credits: one technical writing course (ENC 3246, ENC 2210, or ENC 3253), calculus sequence MAC 2311-2313, linear algebra MAS 4105 or MAS 3114, two physics courses with labs, and STA 3032 engineering statistics. Minimum grade C in major coursework.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Computing Core Coursework",
+    "required_credits": 14,
+    "courses": ["COP 3502C", "COP 3503C", "COT 3100", "COP 3530"],
+    "description": "Required computing core: Programming Fundamentals 1 and 2, Discrete Structures, and Data Structures and Algorithm. COP 3504C may substitute for COP 3502C and COP 3503C with 4 additional elective credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Major Core Coursework",
+    "required_credits": 21,
+    "courses": [
+      "CDA 3101",
+      "CEN 3031",
+      "CIS 4301",
+      "CIS 4914",
+      "COP 4020",
+      "COP 4533",
+      "COP 4600"
+    ],
+    "description": "Required major core totaling 21 credits: computer organization, software engineering, database systems, senior project, programming languages, algorithms, and operating systems. CIS 4914 or EGN 4952 satisfies senior project requirement.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Major Electives",
+    "required_credits": 9,
+    "courses": ["CIS 4XXX", "CIS 4XXX", "CIS 4XXX"],
+    "description": "Nine credits of major electives from any 4000-level or higher CISE course beyond core requirements. Examples include CIS 4504 Computer Networks, CIS 4930 Special Topics, CIS 4905 individual study. Advisor approval required for co-op, internship, and individual study credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester One",
+    "required_credits": 14,
+    "courses": ["Quest 1", "COP 3502C", "MAC 2311", "ENC 1101"],
+    "description": "Freshman fall model plan: Quest 1 (3), COP 3502C Programming Fundamentals 1 critical tracking (4), MAC 2311 Calculus 1 critical tracking (4), State Core Gen Ed Composition (3). Total 14 credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Two",
+    "required_credits": 16,
+    "courses": ["COP 3503C", "COT 3100", "MAC 2312", "PHY 2048", "PHY 2048L"],
+    "description": "Freshman spring model plan: COP 3503C (4), COT 3100 (3), MAC 2312 (4), PHY 2048 with lab (5). Total 15-16 credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Summer After Semester Two",
+    "required_credits": 9,
+    "courses": ["BSC 2010", "PSY 2012", "PHI 2010"],
+    "description": "Summer after freshman year: Gen Ed Biological Sciences (3), State Core Gen Ed Social and Behavioral Sciences (3), State Core Gen Ed Humanities (3). Total 9 credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Three",
+    "required_credits": 15,
+    "courses": ["CDA 3101", "COP 3530", "MAC 2313", "PHY 2049", "PHY 2049L"],
+    "description": "Sophomore fall model plan — Alex Hales current term: CDA 3101 (3), COP 3530 Data Structures critical tracking (3), MAC 2313 (4), PHY 2049 with lab (5). Total 14-15 credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Four",
+    "required_credits": 16,
+    "courses": ["Quest 2", "CEN 3031", "CIS 4301", "ENC 3246", "MAS 3114"],
+    "description": "Sophomore spring model plan: Quest 2 (3), CEN 3031 Software Engineering (3), CIS 4301 Databases (3), ENC 3246 or linear algebra MAS 3114/MAS 4105 (3-4). Total 15-16 credits.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Five",
+    "required_credits": 14,
+    "courses": ["COP 4600", "STA 3032", "Foreign Language", "Gen Ed Social Science"],
+    "description": "Junior fall model plan: COP 4600 Operating Systems critical tracking (3), STA 3032 (3), CLAS Foreign Language (4-5), Gen Ed Social Science (3). COP 4600 requires COP 3530 and CDA 3101.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Six",
+    "required_credits": 14,
+    "courses": ["COP 4020", "COP 4533", "Foreign Language", "Gen Ed Humanities"],
+    "description": "Junior spring model plan: COP 4020 (3), COP 4533 (3), foreign language continuation (3-5), Gen Ed Humanities (3).",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Seven",
+    "required_credits": 15,
+    "courses": ["Gen Ed Social Science", "Gen Ed Humanities", "CIS 4XXX", "CIS 4XXX", "Elective"],
+    "description": "Senior fall model plan: Gen Ed courses and 6 credits of major electives plus elective.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  },
+  {
+    "major": "Computer Science (CLAS)",
+    "category": "Model Semester Plan — Semester Eight",
+    "required_credits": 13,
+    "courses": ["CIS 4914", "CIS 4XXX", "Electives", "Gen Ed Biological Sciences"],
+    "description": "Senior spring model plan: CIS 4914 Senior Project (3), major elective (3), electives (4), Gen Ed Biological Sciences (3). Exit interview required.",
+    "source_url": "https://catalog.ufl.edu/UGRD/colleges-schools/UGLAS/CSC_BS/#modelsemesterplantext"
+  }
+]

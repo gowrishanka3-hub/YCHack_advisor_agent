@@ -11,7 +11,7 @@ from livekit.api import AccessToken, VideoGrants
 from livekit.protocol.room import RoomConfiguration
 from livekit.protocol.agent_dispatch import RoomAgentDispatch
 
-load_dotenv(".env.local")
+load_dotenv(".env.local", override=True)
 
 LIVEKIT_URL = os.environ.get("LIVEKIT_URL", "")
 LIVEKIT_API_KEY = os.environ.get("LIVEKIT_API_KEY", "")

@@ -1,1 +1,232 @@
-[]
+[
+  {
+    "course_id": "COP 3502C",
+    "title": "Programming Fundamentals 1",
+    "credits": 4,
+    "prerequisites": [],
+    "description": "First course in programming fundamentals. Critical-tracking course for UF Computer Science CLAS. Introduces problem solving, algorithm development, and programming in a high-level language.",
+    "offered": ["Fall", "Spring", "Summer"],
+    "critical_tracking": true,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COP 3503C",
+    "title": "Programming Fundamentals 2",
+    "credits": 4,
+    "prerequisites": ["COP 3502C"],
+    "description": "Second course in programming fundamentals. Critical-tracking course. Builds on COP 3502C with object-oriented programming and more complex data structures.",
+    "offered": ["Fall", "Spring", "Summer"],
+    "critical_tracking": true,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COT 3100",
+    "title": "Applications of Discrete Structures",
+    "credits": 3,
+    "prerequisites": ["MAC 2312", "COP 3502C"],
+    "description": "Discrete mathematics for computer science including logic, sets, graphs, and combinatorics. Critical-tracking course.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COP 3530",
+    "title": "Data Structures and Algorithm",
+    "credits": 3,
+    "prerequisites": ["COP 3503C", "COT 3100"],
+    "description": "Fundamental data structures and algorithms. Critical-tracking course required by semester 7 of critical tracking.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CDA 3101",
+    "title": "Introduction to Computer Organization",
+    "credits": 3,
+    "prerequisites": ["COP 3530"],
+    "description": "Computer organization and architecture. Required major core course in UF CSC BS CLAS program.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COP 4600",
+    "title": "Operating Systems",
+    "credits": 3,
+    "prerequisites": ["COP 3530", "CDA 3101"],
+    "description": "Principles of operating systems including processes, memory management, and file systems. Critical-tracking course due by semester 8. Prerequisite for many upper-division systems electives.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CEN 3031",
+    "title": "Introduction to Software Engineering",
+    "credits": 3,
+    "prerequisites": ["COP 3530"],
+    "description": "Software engineering principles, design, and team development practices. Required major core per model semester plan semester four.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CIS 4301",
+    "title": "Information and Database Systems 1",
+    "credits": 3,
+    "prerequisites": ["COP 3530"],
+    "description": "Database design, relational models, SQL, and information systems. Required major core.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COP 4020",
+    "title": "Programming Language Concepts",
+    "credits": 3,
+    "prerequisites": ["COP 3530"],
+    "description": "Programming language paradigms, semantics, and implementation concepts.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "COP 4533",
+    "title": "Algorithm Abstraction and Design",
+    "credits": 3,
+    "prerequisites": ["COP 3530", "COT 3100"],
+    "description": "Advanced algorithm design and analysis techniques.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CIS 4914",
+    "title": "Senior Project",
+    "credits": 3,
+    "prerequisites": ["CEN 3031", "COP 4600"],
+    "description": "Capstone senior design project for computer science majors. Exit interview required in final semester.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CIS 4930",
+    "title": "Special Topics in Computer and Information Science",
+    "credits": 3,
+    "prerequisites": ["COP 3530"],
+    "description": "Special topics elective. Examples include machine learning, computer networks, and computer security depending on semester.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "CIS 4504",
+    "title": "Computer Networks",
+    "credits": 3,
+    "prerequisites": ["COP 4600"],
+    "description": "Computer networking principles and protocols. Popular major elective after operating systems.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "CISE"
+  },
+  {
+    "course_id": "MAC 2311",
+    "title": "Analytic Geometry and Calculus 1",
+    "credits": 4,
+    "prerequisites": [],
+    "description": "First course in calculus. Critical-tracking and general education mathematics requirement.",
+    "offered": ["Fall", "Spring", "Summer"],
+    "critical_tracking": true,
+    "department": "Mathematics"
+  },
+  {
+    "course_id": "MAC 2312",
+    "title": "Analytic Geometry and Calculus 2",
+    "credits": 4,
+    "prerequisites": ["MAC 2311"],
+    "description": "Second course in calculus. Critical-tracking course due by semester 3.",
+    "offered": ["Fall", "Spring", "Summer"],
+    "critical_tracking": true,
+    "department": "Mathematics"
+  },
+  {
+    "course_id": "MAC 2313",
+    "title": "Analytic Geometry and Calculus 3",
+    "credits": 4,
+    "prerequisites": ["MAC 2312"],
+    "description": "Multivariable calculus. Critical-tracking course due by semester 4.",
+    "offered": ["Fall", "Spring", "Summer"],
+    "critical_tracking": true,
+    "department": "Mathematics"
+  },
+  {
+    "course_id": "MAS 3114",
+    "title": "Computational Linear Algebra",
+    "credits": 3,
+    "prerequisites": ["MAC 2312"],
+    "description": "Linear algebra with computational emphasis. Foundational requirement; alternative to MAS 4105.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "Mathematics"
+  },
+  {
+    "course_id": "STA 3032",
+    "title": "Engineering Statistics",
+    "credits": 3,
+    "prerequisites": ["MAC 2312"],
+    "description": "Statistics for engineering and science students. Foundational coursework requirement.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "Statistics"
+  },
+  {
+    "course_id": "PHY 2048",
+    "title": "Physics with Calculus 1",
+    "credits": 4,
+    "prerequisites": ["MAC 2311"],
+    "description": "First semester physics with calculus. Critical-tracking; paired with PHY 2048L laboratory.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "Physics"
+  },
+  {
+    "course_id": "PHY 2048L",
+    "title": "Laboratory for Physics with Calculus 1",
+    "credits": 1,
+    "prerequisites": ["PHY 2048"],
+    "description": "Laboratory component for PHY 2048.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "Physics"
+  },
+  {
+    "course_id": "PHY 2049",
+    "title": "Physics with Calculus 2",
+    "credits": 4,
+    "prerequisites": ["PHY 2048", "MAC 2312"],
+    "description": "Second semester physics with calculus. Critical-tracking due by semester 5. Prerequisite for COP 4600 planning.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "Physics"
+  },
+  {
+    "course_id": "PHY 2049L",
+    "title": "Laboratory for Physics with Calculus 2",
+    "credits": 1,
+    "prerequisites": ["PHY 2049"],
+    "description": "Laboratory component for PHY 2049.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": true,
+    "department": "Physics"
+  },
+  {
+    "course_id": "ENC 3246",
+    "title": "Professional Communication for Engineers",
+    "credits": 3,
+    "prerequisites": [],
+    "description": "Technical and professional writing for engineering and computing students. Foundational writing requirement for CS majors who completed ENC 1101.",
+    "offered": ["Fall", "Spring"],
+    "critical_tracking": false,
+    "department": "English"
+  }
+]
